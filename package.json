@@ -1,0 +1,17 @@
+{
+  "name": "sccgame_nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js > output.log 2>&1",
+    "dev": "nodemon server.js > output.log 2>&1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.5"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "language": "中文",
+  "login": {
+    "loginButton": "登录",
+    "title": "登录",
+    "userName": "用户名:",
+    "password": "密码:",
+    "error": "用户名或密码错误",
+    "remember": "记住登录",
+    "submit": "登录",
+    "forgot": "忘记密码？",
+    "register": "注册新账户"
+  },
+  "search": {
+    "placeholder": "输入游戏名称...",
+    "button": "搜索"
+  },
+  "gameGrid": {
+    "all": "游戏列表",
+    "favor": "收藏的游戏",
+    "genre": "新游戏"
+  }
+}

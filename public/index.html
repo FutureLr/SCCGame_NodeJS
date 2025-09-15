@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <title>SCCGame</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/loadingOverlay.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="header-title">
+            <h1>SCCGame</h1>
+            <p>Simple, Creative and Chill</p>
+        </div>
+
+        <div id="header-right-group">
+            <div id="language-selector">
+                <i class="fa-solid fa-globe"></i>
+                <div id="language" data-lang="language"></div>
+
+                <div id="language-dropdown">
+
+                </div>
+            </div>
+
+            <div id="account-ctn">
+                <div id="login-btn" data-lang="login.loginButton" class="active">
+                </div>
+                <div id="account">
+                    <div id="account-avt-ctn">
+                        <img id="account-avt">
+                    </div>
+                    <div id="account-name-ctn">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="login-form-popup">
+            <form class="login-form" id="login-form">
+                <h2 data-lang="login.title"></h2>
+
+                <div class="form-group">
+                    <label for="username" data-lang="login.userName"></label>
+                    <input type="text" id="username" name="username" autocomplete="off" />
+                </div>
+
+                <div class="form-group">
+                    <label for="password" data-lang="login.password"></label>
+                    <input type="password" id="password" name="password" />
+                </div>
+
+                <p id="login-error" data-lang="login.error"></p>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="remember" />
+                    <label for="remember" data-lang="login.remember"></label>
+                </div>
+
+                <button type="submit" class="login-button" data-lang="login.submit"></button>
+
+                <div class="form-footer">
+                    <a href="#" data-lang="login.forgot"></a>
+                    <a href="#" data-lang="login.register"></a>
+                </div>
+            </form>
+        </div>
+    </header>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+
+    <div id="filter-bar">
+        <div id="genre-toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <form id="search-bar">
+            <input id="search-input" type="text" data-lang="search.placeholder">
+            <button id="search-button" type="button" data-lang="search.button"></button>
+        </form>
+    </div>
+
+    <main>
+        <section id="genre-list">
+
+        </section>
+
+        <div id="game-grid">
+            <section id="favor-game-grid">
+                <h2 data-lang="gameGrid.favor"></h2>
+                <div id="favor-games"></div>
+            </section>
+
+            <section id="genre-game">
+                <h2 data-lang="gameGrid.genre"></h2>
+                <div id="genre-games"></div>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+<script src="assets/js/action.js"></script>
+<script src="assets/js/language.js"></script>
+<script src="assets/js/login.js"></script>
+
+</html>

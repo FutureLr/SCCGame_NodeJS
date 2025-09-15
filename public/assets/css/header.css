@@ -1,0 +1,281 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #14161a;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.1);
+    border-bottom: 1px solid #00e1ff33;
+    height: 80px;
+}
+
+#header-title h1 {
+    font-size: 28px;
+    color: #00e1ff;
+    text-shadow: 0 0 6px #00e1ff55;
+}
+
+#header-title p {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+#header-right-group {
+    display: flex;
+    gap: 30px;
+}
+
+/* ================================================ Language Css ================================================== */
+#language-selector {
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #2c3038;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 8px #00e1ff44;
+    position: relative;
+}
+
+#language-selector:hover {
+    background-color: #3a3f48;
+    box-shadow: 0 0 12px #00e1ffaa;
+}
+
+#language-selector i {
+    font-size: 18px;
+    color: #00e1ff;
+}
+
+#language {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: auto;
+}
+
+#language-dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 100%;
+    right: 0;
+    background-color: #1e1e1e;
+    border: 1px solid #00ffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    padding: 5px 0;
+    min-width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#language-dropdown::-webkit-scrollbar {
+    width: 5px;
+    color: #00bcd4;
+}
+
+#language-dropdown::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.language-option {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.language-option:hover {
+    background-color: #00bcd42a;
+    color: #00ffff;
+}
+
+#language-selector:hover #language-dropdown {
+    display: flex;
+}
+
+/* =================================================== Account Css ================================================= */
+#account-ctn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#login-btn {
+    display: none;
+    min-width: 120px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #00bcd4;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 10px #00bcd444;
+}
+
+.active {
+    display: flex !important;
+}
+
+#login-btn:hover {
+    background-color: #0097a7;
+    box-shadow: 0 0 15px #00e1ffaa;
+}
+
+#account {
+    display: none;
+    align-items: center;
+    gap: 8px;
+}
+
+#account-avt-ctn img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00e1ff44;
+}
+
+#account-name-ctn {
+    font-size: 14px;
+    color: #f0f0f0;
+}
+
+/* ============================================ Login Form Css ================================================= */
+#login-form-popup {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8); 
+    z-index: 999999999999;
+}
+
+.login-form {
+    background: rgba(15, 15, 25, 0.95); 
+    padding: 30px 90px 60px 90px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    color: #e0e0e0;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    font-family: "Orbitron", sans-serif; 
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #0ff; 
+    letter-spacing: 2px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #aaa;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #0a0a12;
+    color: #fff;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #666;
+}
+
+.form-group input:focus {
+    border-color: #0ff;
+    outline: none;
+}
+
+#login-error {
+    display: none;
+    color: red;
+    margin: 0 0 6px 0;
+}
+
+#remember {
+    margin: 0 5px 0 0 ;
+    width: 18px;
+    height: 18px;
+    accent-color: #0ff; 
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.checkbox-group label {
+    margin: 0;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #0ff, #6366f1);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.2s ease;
+}
+
+.login-button:hover {
+    background: linear-gradient(90deg, #00e6e6, #4f46e5);
+}
+
+.form-footer {
+    text-align: right;
+    margin-top: 18px;
+}
+
+.form-footer a {
+    color: #0ff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.form-footer a:hover {
+    color: #fff;
+}
+

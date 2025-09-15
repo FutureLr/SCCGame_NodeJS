@@ -1,0 +1,23 @@
+{
+  "language": "Tiếng Việt",
+  "login": {
+    "loginButton": "Đăng nhập",
+    "title": "Đăng nhập",
+    "userName": "Tên đăng nhập:",
+    "password": "Mật khẩu:",
+    "error": "Tên đăng nhập hoặc mật khẩu không đúng",
+    "remember": "Ghi nhớ đăng nhập",
+    "submit": "Đăng nhập",
+    "forgot": "Quên mật khẩu?",
+    "register": "Đăng kí tài khoản mới"
+  },
+  "search": {
+    "placeholder": "Nhập tên game...",
+    "button": "Tìm kiếm"
+  },
+  "gameGrid": {
+    "all": "Danh sách game",
+    "favor": "Game yêu thích",
+    "genre": "Thể loại"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "language": "English",
+  "login": {
+    "loginButton": "Login",
+    "title": "Login",
+    "userName": "Username:",
+    "password": "Password:",
+    "error": "Incorrect username or password",
+    "remember": "Remember me",
+    "submit": "Sign In",
+    "forgot": "Forgot password?",
+    "register": "Create a new account"
+  },
+  "search": {
+    "placeholder": "Enter game name...",
+    "button": "Search"
+  },
+  "gameGrid": {
+    "all": "Game List",
+    "favor": "Favorite Games",
+    "genre": "New Games"
+  }
+}
